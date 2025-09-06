@@ -1,0 +1,43 @@
+:root {
+    --primary: #5551ff;
+    --primary-dark: #a259ff; 
+    --danger: #951f2b;
+    --border: #d1d5db;
+    --bg: #141416;
+    --text: #0fa958; 
+    --radius: 12px; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg);
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.container{
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    color: var(--danger);
+    font-size: 2.5em;
+}
+p{
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: white;
+    margin-top: 50px; 
+}
+
+.quote{
+    font-style:italic;
+    color: var(--primary-dark);
+    margin-top: 50px;
+}

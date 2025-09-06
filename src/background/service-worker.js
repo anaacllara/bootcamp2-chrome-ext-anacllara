@@ -5,7 +5,7 @@ chrome.tabs.onUpdate.addListener((tabId, changeInfo, tab) => {
 
             for (const site of blockedSites){
                 if(tab.url.includes(site)){
-                    const blockedPageUrl = chrome.runtime.getURL('blocked.html');
+                    const blockedPageUrl = chrome.runtime.getURL('docs/blocekd.html');
                     chrome.tabs.update(tabId, {url: blockedPageUrl});
                     break;
                 }
