@@ -17,4 +17,3 @@ disableBtn.addEventListener('click', () => {
         alert('Modo Foco Desativado!');
     });
 });
-
