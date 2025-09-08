@@ -1,17 +1,26 @@
+:root{
+    --primary: #333;
+    --primary-background:  #f4f4f4;
+    --primary-code: #e9e9e9; 
+    --secondary: #a259ff;
+    --secondary-background: #fff;
+    --buttons: #5551ff; 
+}
+
 body {
     font-family: "Oswald", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--primary-background);
+    color: var(--primary);
 }
 
 /*container styles*/
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background: #fff;
+    background:var(--secondary-background);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +28,7 @@ body {
 
 /*texts styles*/
 h1, h2 {
-    color: #333;
+    color:var(--primary);
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
     margin-top: 30px;
@@ -37,6 +46,9 @@ h2 {
 p {
     margin-bottom: 10px;
 }
+.important{
+    margin-top: 15px;
+ }
 
 /*lists styles */
 ul {
@@ -45,21 +57,24 @@ ul {
     margin-bottom: 10px;
 }
 
+/*codes styles*/
 code {
-    background-color: #e9e9e9;
+    background-color: var(--primary-code);
     padding: 2px 5px;
     border-radius: 3px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9em;
 }
+
 /*highlights and images styles*/
 .highlight {
-    background-color: #d1ecf1;
+    background-color: var(--primary-code);
     padding: 10px;
-    border-left: 5px solid #595cff;
+    border-left: 5px solid var(--secondary);
     margin-top: 15px;
 }
 
+/*images styles*/
 img{
     width: 100%; 
     max-width: 400px;
@@ -69,4 +84,22 @@ img{
 }
 #icon{
     max-width: 32px;
+}
+
+/*download styles*/
+.download-button{
+    display: inline-block;
+    background-color: var(--secondary);
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover{
+    background-color: var(--secondary);
 }
