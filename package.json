@@ -1,5 +1,5 @@
 {
-  "name": "my-chorome-extension",
+  "name": "my-chrome-extension",
   "version": "1.2.0",
   "scripts": {
     "build": "node scripts/build-extensions.mjs",
