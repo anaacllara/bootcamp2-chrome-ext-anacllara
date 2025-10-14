@@ -54,7 +54,7 @@ Se a página de bloqueio aparecer, significa que a extensão está funcionando c
 
 ## 🖇️ Estrutura do Projeto 
 
-A estrutura foi organizada para facilitar o desenvolvimento e manutenção. A pasta ``chrome-ext`` contém cada um dos arquivos citados. 
+A estrutura foi organizada para facilitar o desenvolvimento e manutenção.
 
 - **`icons/`**: contém ícones da extensão.
 - **`node_modules`**: dependências do node.js.
