@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "scripts": {
     "build": "node scripts/build-extensions.mjs",
-    "test:e2e": "node -r ts-node/register $(npm bin)/playwright test --config=tests/playwright.config.ts --reporter=list, html",
+    "test:e2e": "npx --node-arg=--require=ts-node/register playwright test --config=tests/playwright.config.ts --reporter=list, html",
     "test": "npm run build && npm run test:e2e"
   },
   "devDependencies": {
