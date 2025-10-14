@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Teste E2E
-        run: xvfb-run -a npm run teste:E2E 
+        run: xvfb-run -a npm run teste:e2e
 
       - name: Publicar relatório HTML do teste
         if: always()
@@ -42,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: extension-zip 
-          path: dist/extension.zipd
+          path: dist/extension.zip
