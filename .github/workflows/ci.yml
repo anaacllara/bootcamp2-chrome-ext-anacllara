@@ -28,6 +28,7 @@ jobs:
         run: npm run build
 
       - name: Teste E2E
+        working-directory: ${{github.workspace}}
         run: xvfb-run -a npm run test:e2e
 
       - name: Publicar relatório HTML do teste
