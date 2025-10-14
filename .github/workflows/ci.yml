@@ -17,23 +17,19 @@ jobs:
         with: 
           node-version: '20'
           cache: 'npm'
-        working-directory: ./chrome-ext
+        
 
       - name: Instalar dependências
         run: npm ci 
-        working-directory: ./chrome-ext
 
       - name: Instalar Playwright (Chromium + deps)
         run: npx playwright install --with-deps chromium 
-        working-directory: ./chrome-ext
 
       - name: Build extensão 
         run: npm run build
-        working-directory: ./chrome-ext
 
       - name: Teste E2E
         run: xvfb-run -a npm run teste:E2E
-        working-directory: ./chrome-ext
 
       - name: Publicar relatório HTML do teste
         if: always()

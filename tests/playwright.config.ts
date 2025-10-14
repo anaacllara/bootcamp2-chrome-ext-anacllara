@@ -4,7 +4,7 @@ import path from "node:path";
 const dist = path.join(__dirname, '..', 'dist');
 
 export default defineConfig({
-    testDir: __dirname, 
+    testDir: './tests', 
     reporter:[['list'],['html', {outpuFolder: 'playwright-report'}]], 
     projects: [
         {
